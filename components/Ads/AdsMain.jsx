@@ -4,7 +4,7 @@ import Ads from "./Ads";
 
 const AdsMain = () => {
     return (
-        <main className="px-6 py-8 md:px-12 lg:px-16 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-[640px_640px] gap-8 justify-center items-center mx-auto">
+        <main className="px-6 py-8 md:px-12 lg:px-16 justify-center items-center flex gap-8 mx-auto w-full">
             <Ads
                 bg={bg_ads_1.src}
                 text_1={"The Best Platform to Car Rental"}
