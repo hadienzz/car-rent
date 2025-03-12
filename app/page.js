@@ -3,7 +3,7 @@ import Header from "@/components/Header/Header";
 import AdsMain from "@/components/Ads/AdsMain";
 import Head from "next/head";
 import PickMain from "@/components/Pick-Off/PickMain";
-import CollectionCars from "@/components/CollectionCars/CollectionCars";
+import CollectionCarsMain from "@/components/CollectionCars/CollectionCarsMain";
 
 const App = () => {
   return (
@@ -13,7 +13,7 @@ const App = () => {
 
         <AdsMain />
         <PickMain />
-        <CollectionCars />
+        <CollectionCarsMain />
       </Container>
     </>
   );

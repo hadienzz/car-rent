@@ -1,36 +1,40 @@
 import TankIcon from '@/icons/TankIcon'
-import car from '../../public/car.png'
+import koenigsegg from '../../public/koenigsegg.png'
 import TransmisionIcon from '@/icons/TransmisionIcon'
 import PeopleIcon from '@/icons/PeopleIcon'
-import Button from '../UI/Button'
 
-const CollectionCarsCard = () => {
+const CollectionCarsCard = (props) => {
     return (
         <div className="bg-[#FFFFFF] p-4 rounded-[10px]">
-            <div className="flex gap-22">
-                <h1 className="text-base text-[#1A202C] font-semibold">Koenigsegg</h1>
+            <div className="flex justify-between">
+                <h1 className="text-base text-[#1A202C] font-semibold">{props.name}</h1>
                 <p className=" "> LOVE</p>
             </div>
-            <p className="text-xs font-medium text-[#90A3BF]">Sport</p>
-            <img src={car.src} className='w-[180px]' alt="Koenigsegg" />
-            <div className='flex justify-center gap-4 text-xs text-[#90A3BF]'>
+
+            <p className="text-xs font-medium text-[#90A3BF]">{props.type}</p>
+            <div className='overflow-hidden h-[128px] flex justify-center items-center'>
+                <img src={props.image} className='w-[180px]' alt={props.name} />
+            </div>
+
+            <div className='flex justify-center gap-4 text-xs text-[#90A3BF] mt-8'>
+
                 <div className='flex gap-1'>
                     <TankIcon />
-                    <p>90 L</p>
+                    <p>{props.tank}</p>
                 </div>
                 <div className='flex gap-1'>
                     <TransmisionIcon />
-                    <p>Matic</p>
+                    <p>{props.transmision}</p>
                 </div>
                 <div className='flex gap-1'>
                     <PeopleIcon />
-                    <p>2 People</p>
+                    <p>{props.amount}</p>
                 </div>
             </div>
 
-            <div className='flex'>
-                <p className='text-xs text-[#90A3BF]'><span className='text-base font-bold text-[#1A202C]'>$99.00/</span> day</p>
-                <Button>Buy Now</Button>
+            <div className='flex items-center text-white gap-4 justify-center mt-7'>
+                <p className='text-xs text-[#90A3BF]'><span className='text-base font-bold text-[#1A202C]'>${props.price}/</span> day</p>
+                <button className='bg-[#3563E9] rounded-sm px-5 text-xs md:text-base font-semibold py-2.5 cursor-pointer'>Buy Now</button>
             </div>
         </div>
     )
