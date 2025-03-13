@@ -5,7 +5,7 @@ import PeopleIcon from '@/icons/PeopleIcon'
 
 const CollectionCarsCard = (props) => {
     return (
-        <div className="bg-[#FFFFFF] p-4 rounded-[10px]">
+        <div className="bg-[#FFFFFF] p-4 lg:p-6 rounded-[10px] cursor-pointer shadow-2xl lg:w-[304px]">
             <div className="flex justify-between">
                 <h1 className="text-base text-[#1A202C] font-semibold">{props.name}</h1>
                 <p className=" "> LOVE</p>
@@ -16,7 +16,7 @@ const CollectionCarsCard = (props) => {
                 <img src={props.image} className='w-[180px]' alt={props.name} />
             </div>
 
-            <div className='flex justify-center gap-4 text-xs text-[#90A3BF] mt-8'>
+            <div className='flex justify-center gap-4 text-xs lg:text-sm text-[#90A3BF] mt-8'>
 
                 <div className='flex gap-1'>
                     <TankIcon />
@@ -33,8 +33,8 @@ const CollectionCarsCard = (props) => {
             </div>
 
             <div className='flex items-center text-white gap-4 justify-center mt-7'>
-                <p className='text-xs text-[#90A3BF]'><span className='text-base font-bold text-[#1A202C]'>${props.price}/</span> day</p>
-                <button className='bg-[#3563E9] rounded-sm px-5 text-xs md:text-base font-semibold py-2.5 cursor-pointer'>Buy Now</button>
+                <p className='text-xs lg:text-sm text-[#90A3BF]'><span className='text-base font-bold text-[#1A202C] lg:text-xl'>${props.price}/</span> day</p>
+                <button className='bg-[#3563E9] rounded-sm px-5 text-xs lg:text-base font-semibold py-2.5 cursor-pointer'>Buy Now</button>
             </div>
         </div>
     )

@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.disable-select {
+  user-select: none;
+}
+
+.smooth-scroll {
+  -webkit-overflow-scrolling: touch;
+  will-change: transform;
+}
