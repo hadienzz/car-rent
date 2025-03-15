@@ -3,9 +3,9 @@ import CollectionCars from "./CollectionCars"
 
 const CollectionCarsMain = () => {
     return (
-        CARS.map((item,idx) => {
-            return <CollectionCars types={item.types} car={item.car} key={idx} />
-        })
+        CARS.map((item, idx) => (
+            <CollectionCars types={item.types} car={item.car} key={idx} />
+        ))
     )
 }
 
