@@ -1,5 +1,6 @@
 import FilterBar from "../Search/FilterBar"
 import SearchBar from "../Search/SearchBar"
+import cartIcon from '../../public/cart.png'
 
 const Header = () => {
     return (
@@ -10,7 +11,12 @@ const Header = () => {
                     <SearchBar />
                     <FilterBar />
                 </div>
-                <p>IMAGE</p>
+                <div className="w-8 h-8 cursor-pointer relative">
+                    <img src={cartIcon.src} alt="Cart" />
+                    <div className="rounded-full w-4 h-4 bg-red-500  absolute -mt-8 ml-5 flex items-center justify-center text-center text-white hidden ">
+                        <p className="text-xs">1</p>
+                    </div>
+                </div>
             </div>
             <div className="text-center flex gap-4 justify-center items-center mt-8 md:hidden">
                 <SearchBar />

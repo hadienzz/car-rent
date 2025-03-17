@@ -3,10 +3,25 @@ import koenigsegg from '../../public/koenigsegg.png'
 import TransmisionIcon from '@/icons/TransmisionIcon'
 import PeopleIcon from '@/icons/PeopleIcon'
 import love from '../../public/love.png'
+import { CARS } from '@/app/data/cars'
+import { useRouter } from 'next/navigation'
 
 const CollectionCarsCard = (props) => {
+    const router = useRouter()
+
+    const handleClick = (id) => {
+        console.log(CARS.map((item) => (
+            item.car.find((item) => item.id === id)
+        )))
+    }
+
+    const handleDetail = (id) => {
+        router.push(id)
+    }
+
+
     return (
-        <div className="bg-[#FFFFFF] p-4 lg:p-6 rounded-[10px] cursor-pointer shadow-2xl lg:w-[304px]">
+        <div className="bg-[#FFFFFF] p-4 lg:p-6 rounded-[10px] cursor-pointer shadow-2xl lg:w-[304px] ">
             <div className="flex justify-between">
                 <h1 className="text-base text-[#1A202C] font-semibold">{props.name}</h1>
                 <div className="text-[150px] font-bold bg-red-500 text-transparent bg-clip-text">
@@ -15,7 +30,7 @@ const CollectionCarsCard = (props) => {
             </div>
 
             <p className="text-xs font-medium text-[#90A3BF]">{props.type}</p>
-            <div className='overflow-hidden h-[128px] flex justify-center items-center'>
+            <div className='overflow-hidden h-[128px] flex justify-center items-center' onClick={() => handleDetail(props.id)}>
                 <img src={props.image} className='w-[180px]' alt={props.name} />
             </div>
 
@@ -37,7 +52,7 @@ const CollectionCarsCard = (props) => {
 
             <div className='flex items-center text-white gap-4 justify-center mt-7'>
                 <p className='text-xs lg:text-sm text-[#90A3BF]'><span className='text-base font-bold text-[#1A202C] lg:text-xl'>${props.price}.00/</span> day</p>
-                <button className='bg-[#3563E9] rounded-sm px-5 text-xs lg:text-base font-semibold py-2.5 cursor-pointer'>Buy Now</button>
+                <button className='bg-[#3563E9] rounded-sm px-5 text-xs lg:text-base font-semibold py-2.5 cursor-pointer' onClick={() => handleClick(props.id)}>Buy Now</button>
             </div>
         </div>
     )

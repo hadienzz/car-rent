@@ -17,6 +17,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "2 People",
         price: "99",
+        id: "pc1",
       },
       {
         name: "Nissan GT-R",
@@ -26,6 +27,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "2 People",
         price: "80",
+        id: "pc2",
       },
       {
         name: "Rolls - Royce",
@@ -35,6 +37,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "2 People",
         price: "96",
+        id: "pc3",
       },
       {
         name: "Nissan GT-R",
@@ -44,6 +47,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "2 People",
         price: "80",
+        id: "pc4",
       },
     ],
   },
@@ -58,6 +62,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "6 People",
         price: "72",
+        id: "rc1",
       },
       {
         name: "CR - V",
@@ -67,6 +72,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "6 People",
         price: "80",
+        id: "rc2",
       },
       {
         name: "All New Terios",
@@ -76,6 +82,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "6 People",
         price: "74",
+        id: "rc3",
       },
       {
         name: "CR - V",
@@ -85,6 +92,7 @@ export const CARS = [
         transmision: "Manual",
         amount: "6 People",
         price: "80",
+        id: "rc4",
       },
     ],
   },

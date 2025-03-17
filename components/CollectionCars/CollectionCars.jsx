@@ -35,7 +35,7 @@ const CollectionCars = ({ types, car }) => {
     }
 
     return (
-        <main className="pl-6 py-8 md:px-12 lg:px-16 xl:px-21 md:flex flex-col items-center w-full">
+        <main className="pl-6 py-8 md:px-12 lg:px-16 xl:px-21 md:flex flex-col items-center w-full ">
             <header className="flex justify-between w-full md:px-5 mb-5">
                 <h1 className="text-sm md:text-base font-semibold text-[#90A3BF]">{types}</h1>
                 <p className="text-xs md:text-base text-[#3563E9] cursor-pointer pr-6">View All</p>
