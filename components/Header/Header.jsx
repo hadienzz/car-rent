@@ -4,7 +4,7 @@ import cartIcon from '../../public/cart.png'
 
 const Header = () => {
     return (
-        <header className="px-6 py-8 md:px-12 lg:px-16 items-center">
+        <header className="px-6 py-8 md:px-12 lg:px-16 ">
             <div className="flex justify-between">
                 <h1 className="font-bold text-2xl text-primary text-[#3563E9]">MORENT</h1>
                 <div className="hidden md:flex gap-4 justify-center items-center">
