@@ -24,7 +24,7 @@ const Footer = () => {
 
     return (
         <footer className="px-6 py-8 md:px-12 lg:px-16 ">
-            <div>
+            <div className="md:px-5">
                 <h1 className="font-bold text-2xl text-primary text-[#3563E9]">MORENT</h1>
                 <p className="w-[250px] text-sm font-medium text-[#90A3BF] mt-6">Our vision is to provide convenience and help increase your sales business.</p>
             </div>
